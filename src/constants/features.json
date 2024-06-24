@@ -1,0 +1,78 @@
+{
+  "standard": [
+    {
+      "icon": "iconoir:check",
+      "color": "#000000",
+      "text": "Accès au jeux en version non personnalisés"
+    },
+    { "icon": "iconoir:check", "color": "", "text": "3 actions disponibles" },
+    {
+      "icon": "iconoir:check",
+      "color": "#000000",
+      "text": "Séléction de l'ordre de priorité des actions"
+    },
+    { "icon": "iconoir:check", "color": "", "text": "Sélection des cadeaux" },
+    {
+      "icon": "iconoir:check",
+      "color": "#000000",
+      "text": "Choix limité de pictogrammes pour vos jeux"
+    },
+    {
+      "icon": "iconoir:check",
+      "color": "#000000",
+      "text": "Accès au tableau de bord pour suivre vos activités"
+    }
+  ],
+  "premium": [
+    { "icon": "iconoir:check", "color": "#000000", "text": "3 actions disponibles" },
+
+    {
+      "icon": "iconoir:check",
+      "color": "#000000",
+      "text": "Séléction de l'ordre de priorité des actions"
+    },
+    { "icon": "iconoir:check", "color": "#000000", "text": "Séléction des cadeaux" },
+    {
+      "icon": "iconoir:check",
+      "color": "#000000",
+      "text": "Accès au tableau de bord pour suivre vos activités"
+    },
+    {
+      "icon": "icons8:plus",
+      "color": "#F59006",
+      "text": "Accès aux jeux en version personnalisés"
+    },
+    {
+      "icon": "icons8:plus",
+      "color": "#F59006",
+      "text": "Intégration de vos couleurs dans les jeux"
+    },
+    {
+      "icon": "icons8:plus",
+      "color": "#F59006",
+      "text": "Intégration de votre logo dans les jeux"
+    },
+    {
+      "icon": "icons8:plus",
+      "color": "#F59006",
+      "text": "Intégration de vos pictogrammes dans les jeux"
+    }
+  ],
+  "devis": [
+    {
+      "icon": "fluent:arrow-right-20-regular",
+      "color": "#000000",
+      "text": "Vous avez plusieurs établissements ?"
+    },
+    {
+      "icon": "fluent:arrow-right-20-regular",
+      "color": "#000000",
+      "text": "Vous souhaitez un jeu sur mesure à l'éffigie de votre marque ?"
+    },
+    {
+      "icon": "fluent:arrow-right-20-regular",
+      "color": "#000000",
+      "text": "Vous souhaitez une intégration caisse ?"
+    }
+  ]
+}
