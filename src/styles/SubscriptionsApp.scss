@@ -7,8 +7,8 @@
   align-items: center;
   gap: 2em;
 
-  h1{
-    margin:0;
+  h1 {
+    margin: 0;
   }
 
   &__cards {
@@ -32,6 +32,8 @@
       gap: 0.5em;
       cursor: pointer;
 
+      transition: 0.5s ease-in-out;
+
       &__title {
         padding: 0 0 0.5em 0;
         color: $tgc-blue;
@@ -45,12 +47,14 @@
         margin-bottom: -7px;
       }
 
+      &--selected &__sale {
+        .frequency {
+          color: $tgc-blue;
+        }
+      }
+
       &__sale {
         font-size: 1em;
-
-        .frequency{
-          color:$tgc-blue;
-        }
       }
     }
   }

@@ -10,6 +10,14 @@ const PriceCard = ({ selectedSubscription, type }) => {
       <div className="price-card__header">
         <h1 className="price-card__header__title ">{type.title}</h1>
 
+        {type.id === "premium" && (
+          <Icon
+            className="price-card__header__premiumbookmark"
+            icon="material-symbols:bookmark"
+            color="#3F5EFB"
+          />
+        )}
+
         {type.id === "devis" ? (
           <Icon icon={type.icon} />
         ) : (
@@ -20,12 +28,12 @@ const PriceCard = ({ selectedSubscription, type }) => {
               ]
             }€`}
             <span className="frequency">
-              {selectedSubscription === 1 ? "" : "/mois"}
+              {selectedSubscription === 0 ? "" : "/mois"}
             </span>
           </h2>
         )}
 
-        {selectedSubscription !== 1 && type.id !== "devis" && (
+        {selectedSubscription !== 0 && type.id !== "devis" && (
           <p className="price-card__header__sale">
             {`${
               subscriptionList[1][

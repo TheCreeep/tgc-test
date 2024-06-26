@@ -9,6 +9,13 @@
   border-radius: 0.5em;
   min-height: 600px;
   width: 400px;
+  position: relative;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover{
+    transform: scale(1.02);
+  }
 
   h2,
   p {
@@ -37,7 +44,14 @@
     &__sale {
       font-size: 1.2em;
       text-decoration: line-through;
+    }
 
+    &__premiumbookmark {
+      position: absolute;
+      width: 80px;
+      height: 100px;
+      top: -30px;
+      right: 10px;
     }
   }
 
