@@ -4,35 +4,114 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   outline: 2px #ccc solid;
   border-radius: 0.5em;
-  height: 600px;
+  min-height: 600px;
   width: 400px;
 
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.005);
+  h2,
+  p {
+    margin: 0;
   }
 
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      font-size: 2em;
+    }
+
+    &__price {
+      font-size: 2.5em;
+
+      .frequency {
+        font-size: 0.5em;
+        font-weight: 400;
+        color: #999;
+      }
+    }
+
+    &__sale {
+      font-size: 1.2em;
+      text-decoration: line-through;
+
+    }
+  }
+
+  /* Devis */
+  &.devis &__header {
+    & > svg {
+      width: 80px;
+      height: 80px;
+
+      &:before {
+        content: "+";
+        color: $tgc-blue;
+        font-size: 100px;
+      }
+    }
+  }
+
+  &__devistext {
+    margin: 0 1em !important;
+    font-weight: 500;
+    font-size: 0.75em;
+    text-align: left;
+  }
+
+  /* Premium */
   &.premium {
     outline: 2px $tgc-blue solid;
     background: $tgc-phantom;
-    height: 650px;
+    min-height: 650px;
+    max-width: 370px;
+    box-shadow: -30px -30px 50px 10px #42424225;
   }
 
-  &__title {
-    color:$tgc-blue !important;
-  }
+  &.premium &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  &__price {
+    &__title {
+      color: $tgc-blue;
+      font-size: 2em;
+    }
+
+    &__price {
+      color: $tgc-blue;
+      font-size: 4em;
+    }
+
+    &__sale {
+      color: $tgc-blue;
+      font-size: 1.2em;
+      text-decoration: line-through;
+    }
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7em;
+    margin: 0 1em;
+    font-weight: 500;
     &__item {
       display: flex;
       align-items: center;
       gap: 1em;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+      p {
+        font-size: 0.8em;
+      }
     }
   }
 
@@ -47,6 +126,7 @@
     width: 280px;
     height: 40px;
     border-radius: 0.2em;
+    cursor: pointer;
 
     transition: all 0.2s ease-in-out;
 
